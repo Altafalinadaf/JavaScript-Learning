@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center; margin: 10px;">
+    <img id="img" src="i1.jpg" alt="image" width="550px" height="550px">
+    <br>
+    <br>
+    <button style="margin: 100px;" onclick="back()">prev </button>
+    <button onclick="move()">next</button>
+
+    
+
+    <script>
+
+        let img = document.getElementById('img');
+        let i = 1;
+        function move() {
+            ++i;
+            img.setAttribute("src", "i" + i + ".jpg");
+           
+        }
+
+        function back(){
+            --i;
+            img.setAttribute("src","i"+i+".jpg")
+        }
+
+    </script>
+</body>
+
+</html>
