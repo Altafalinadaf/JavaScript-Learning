@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" >
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="idnum">Id Num</label>
+            <input type="password" name="name" id="idnum"><br><br>
+                     
+        </fieldset>
+    </form>
+    
+    <button onclick="showVal()">Submit</button>
+    <button onclick="reset()">reset</button>
+
+   <p id="target"></p>
+    <script>
+        function showVal() {
+            let n = document.getElementById('name').value;
+            let id = document.getElementById('idnum').value;
+            console.log(n, id);
+
+            let print=document.getElementById('target')
+            print.textContent=`name is ${n} and id number is ${id}`
+        }
+
+        function reset(){
+            document.getElementById('name').value="";
+            document.getElementById('idnum').value="";
+           
+            document.getElementById('target').textContent="";
+            
+        }
+
+    </script>
+</body>
+
+</html>
