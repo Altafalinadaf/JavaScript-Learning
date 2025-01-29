@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(images/formImage.jpg!bw700); background-size: cover; margin-left: 50px;">
+    <div class="formNav">
+
+        <nav>
+            <a href="list.html" title="click here to see the example of List tags">List Example</a>
+            <a href="table.html" title="click here to see the example of Table tags">Table Example</a>
+            <a href="audio.html" title="click here to see the example of Audio tags">Audio Exmaple</a>
+            <a href="video.html" title="click here to see the example of video tags">Video Example</a>
+        </nav>
+    </div>
+    <h1 style="color: black; text-align: center;">This is an Example for Form Tags</h1>
+    <h2 style="color: rgb(222, 10, 60); text-align: center;">Sign In Page</h2>
+
+    <div class="form">
+        <form action="">
+            <fieldset>
+                <legend>Information</legend>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Please enter your name" required><br><br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" placeholder="Please enter your age"><br><br>
+
+                <label for="phone">Phone: </label>
+                <input type="number" id="phone" name="phone" placeholder="Please enter your phone number"
+                    required><br><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email" required><br><br>
+
+                <label>Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"><br><br>
+
+
+                <label>Language : </label><br><br>
+                <label for="c">C</label>
+                <input type="checkbox" name="C" id="c"><br><br>
+                <label for="java">Java</label>
+                <input type="checkbox" name="java" id="java"><br><br>
+                <label for="c++">C++</label>
+                <input type="checkbox" name="C++" id="c++"><br><br>
+                <label for="country">Country: </label>
+                <select name="country" id="country">
+                    <option value="">---Select---</option>
+                    <option value="india">India</option>
+                    <option value="us">US</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="mexico">Mexico</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+</body>
+
+</html>
