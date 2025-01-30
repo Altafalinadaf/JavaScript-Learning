@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generate Task</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Random task Generator </h1>
-    <p id="task"></p>
-    <button onclick="generateTask()">GenerateTask</button>
+    <div  class="container">
+        <div class="heading">
+            <h1>Random task Generator </h1>
+            <p id="task"></p>
+
+        </div>
+        <div>
+            <button onclick="generateTask()">GenerateTask</button>
+        </div>
+    </div>
 
     <script>
         let tasks = [
@@ -25,10 +33,10 @@
             "Tell a joke to make someone laugh."
         ];
 
-        function generateTask(){
-            let index=Math.floor(Math.random()*tasks.length);  // this is give the random index number 
-            let get=document.getElementById("task"); // by using this method i'm going to accessing the <p> tag by using p tag id which is "task"
-            get.textContent="Random Task is : "+tasks[index]; // here I'm assigning the value to the <p> tag  which is comes under get variable
+        function generateTask() {
+            let index = Math.floor(Math.random() * tasks.length);  // this is give the random index number 
+            let get = document.getElementById("task"); // by using this method i'm going to accessing the <p> tag by using p tag id which is "task"
+            get.textContent = "Random Task is : " + tasks[index]; // here I'm assigning the value to the <p> tag  which is comes under get variable
         }
     </script>
 </body>

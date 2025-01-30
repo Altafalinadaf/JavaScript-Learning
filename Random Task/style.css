@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 1px;
+  
+}
+
+.container{
+    
+    padding: 300px;
+   
+}
+
+h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    color:brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    color:white;
+    background-color: black;
+}
+
+button:hover{
+    color: black;
+    background-color: aquamarine;
+}
