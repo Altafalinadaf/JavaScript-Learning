@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>touchAnyWhere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="touchAnyWhere()">
+    <h1>Touch here to change background color</h1>
+
+    <script>
+        function touchAnyWhere() {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+                console.log(color);
+            }
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+
+</body>
+
+</html>

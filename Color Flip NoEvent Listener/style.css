@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    text-decoration: underline;
+    padding: 300px;
+   
+}
+
+h1:hover{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
