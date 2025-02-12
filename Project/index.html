@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Number Checker</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <p id="output"></p>
+
+    <script>
+        document.getElementById('numberInput').addEventListener('input', function() {
+            let num = parseInt(this.value);
+            let output = document.getElementById('output');
+
+            if (isNaN(num)) {
+                output.textContent = "";
+                return;
+            }
+
+            if (num < 0) {
+                output.textContent = "Enter a positive value";
+            } else if (num % 2 === 0) {
+                output.textContent = ` ${num + 2}, ${num + 4}, ${num + 6}`;
+            } else {
+                output.textContent = ` ${num + 2}, ${num + 4}, ${num + 6}`;
+            }
+        });
+    </script>
+
+</body>
+</html>
