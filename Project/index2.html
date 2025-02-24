@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function showRed() {
+            var changer = document.getElementById("changer");
+            changer.style.backgroundColor = "red";
+        }
+
+        function showBlue() {
+            var changer = document.getElementById("changer");
+            changer.style.backgroundColor = "blue"; // Fix: Set background to blue
+        }
+
+        function notify() {
+            alert("Welcome!");
+        }
+    </script>
+</head>
+<body>
+
+    <input id="changer" type="button" value="Hover or Click Me"
+           onmouseover="showRed();" 
+           onclick="notify();"
+           onmouseout="showBlue();">
+</body>
+</html>
